@@ -2,11 +2,36 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="396.0" style="-fx-background-color: GRAY;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="labelTitle" alignment="CENTER" layoutX="166.0" layoutY="23.0" prefHeight="32.0" prefWidth="67.0" text="Window2" textAlignment="CENTER" />
-      <Button fx:id="btnChange" layoutX="178.0" layoutY="175.0" mnemonicParsing="false" onAction="#switchWindow" text="Change" />
+      <Label fx:id="labelTitle" alignment="CENTER" layoutX="139.0" layoutY="23.0" prefHeight="32.0" prefWidth="113.0" text="SAFE BOX" textAlignment="CENTER" textFill="#04c6d3">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnChangePass" layoutX="14.0" layoutY="194.0" mnemonicParsing="false" onAction="#changePass" prefHeight="33.0" prefWidth="134.0" style="-fx-background-color: SKYBLUE;" text="CHANGE PASS">
+         <font>
+            <Font name="Agency FB Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="55.0" prefHeight="23.0" prefWidth="239.0" text="This is the contents of the safe">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLockBox" layoutX="248.0" layoutY="194.0" mnemonicParsing="false" onAction="#lockBox" prefHeight="33.0" prefWidth="134.0" style="-fx-background-color: SKYBLUE;" text="LOCK">
+         <font>
+            <Font name="Agency FB Bold" size="17.0" />
+         </font>
+      </Button>
+      <TextArea layoutX="53.0" layoutY="87.0" prefHeight="86.0" prefWidth="291.0" text="Bank Key: 1/2/3$4&#10;&#10;Netflix:&#10; Key: netflix.com&#10;Account: correo@gmail.com&#10;">
+         <font>
+            <Font name="Arial Narrow" size="12.0" />
+         </font>
+      </TextArea>
    </children>
 </Pane>

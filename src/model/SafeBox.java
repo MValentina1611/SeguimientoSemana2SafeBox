@@ -3,22 +3,32 @@ package model;
 import javafx.scene.control.PasswordField;
 
 public class SafeBox {
+	
+	private String pass = "000000";
+	
+	
 
-	public static int verifyPassword( PasswordField [] p )
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+
+
+	public boolean verifyPassword( PasswordField p1, PasswordField p2, PasswordField p3, 
+			PasswordField p4, PasswordField p5, PasswordField p6, String password )
 	{
-		int correct = 0;
-		for(int i = 0;  i < 6;  i++ )
-		{
-			if ( (p[i] != null) )
-			{
-				if( p[i].getText().equals("0") )
-				{	
-					correct++;
-				}
-			}
-		}
+		String concatenate = p1.getText() + p2.getText() + p3.getText() + p4.getText() + p5.getText() + p6.getText();
+		boolean match = false;
 		
-		return correct;
+		if( concatenate.equals(password))
+		{
+			match = true;
+		}	
+		
+		return match;
 				
 	}
 }
